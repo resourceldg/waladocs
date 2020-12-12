@@ -47,7 +47,7 @@
   let selectedItem = false;
 
   const menu = [
-    { to: "/components/text-fields", text: "Text fields" },
+    { to: "/components/text-fields", text: "Text Fields" },
     { to: "/components/buttons", text: "Buttons" },
     { to: "/components/selection-controls#checkboxes", text: "Checkboxes" },
     {

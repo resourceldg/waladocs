@@ -34,9 +34,7 @@
 
 <svelte:head>
   <title>Waladocs</title>
-  <meta
-    name="description"
-    content="Walatic: The Next IOT" />
+  <meta name="description" content="Walatic: The Next IOT" />
 </svelte:head>
 
 {#if $preloading}
@@ -78,7 +76,7 @@
       text
       on:click={() => showNav.set(!$showNav)} />
   </div>
-  <a href="https://github.com/matyunya/smelte" class="px-4 github">
+  <a href="https://github.com/resourceldg/waladocs" class="px-4 github">
     <img src="/github.png" alt="Github Smelte" width="24" height="24" />
   </a>
 </AppBar>
@@ -95,11 +93,27 @@
     <h6
       class="px-3 ml-1 pb-2 pt-8 text-sm text-gray-900 font-light
       dark:text-gray-100">
-      Infrestructure
+      Developer Getting Started!!
     </h6>
     <List items={navMenu}>
       <span slot="item" let:item class="cursor-pointer">
-        {#if item.to === '/typography'}
+        {#if item.to === 'infrestructure/sre'}
+          <hr class="mt-4" />
+          <h6
+            class="px-3 ml-1 pb-2 pt-8 text-sm text-gray-900 font-light
+            dark:text-gray-100">
+            infrestructure
+          </h6>
+        {/if}
+        {#if item.to === 'api/api'}
+          <hr class="mt-4" />
+          <h6
+            class="px-3 ml-1 pb-2 pt-8 text-sm text-gray-900 font-light
+            dark:text-gray-100">
+            Api
+          </h6>
+        {/if}
+        {#if item.to === 'backend/postgresql'}
           <hr class="mt-4" />
           <h6
             class="px-3 ml-1 pb-2 pt-8 text-sm text-gray-900 font-light
@@ -107,6 +121,16 @@
             Backend
           </h6>
         {/if}
+        {#if item.to === 'frontend/frontend'}
+          <hr class="mt-4" />
+          <h6
+            class="px-3 ml-1 pb-2 pt-8 text-sm text-gray-900 font-light
+            dark:text-gray-100">
+            Frontend
+          </h6>
+        {/if}
+        
+
 
         <a href={item.to}>
           <ListItem
@@ -120,7 +144,7 @@
         </a>
       </span>
     </List>
-    
+
     <hr />
   </NavigationDrawer>
 

@@ -10,7 +10,7 @@ function isDarkTheme() {
   }
 }
 
-export default function dark(value = false, bodyClasses = "mode-dark") {
+export default function dark(value = true, bodyClasses = "mode-dark") {
   if (typeof window === "undefined") return writable(value);
 
   if (!darkMode) {

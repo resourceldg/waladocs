@@ -141,6 +141,7 @@ module.exports = ({ colors = defaultColors, darkMode = true, ...config }) =>
           //   transDark: "rgb(236,239,241,0.2)"
           // }
         }
+        
       },
       plugins: [
         require("tailwind-css-variables")(),
