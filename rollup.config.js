@@ -105,7 +105,7 @@ export default {
                 84: "21rem",
                 96: "24rem"
               },
-              darkMode: true
+             
             }
             
           }

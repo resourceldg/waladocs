@@ -102,7 +102,7 @@
           <h6
             class="px-3 ml-1 pb-2 pt-8 text-sm text-gray-900 font-light
             dark:text-gray-100">
-            infrestructure
+            Infrestructure
           </h6>
         {/if}
         {#if item.to === 'api/api'}
@@ -129,8 +129,6 @@
             Frontend
           </h6>
         {/if}
-        
-
 
         <a href={item.to}>
           <ListItem
