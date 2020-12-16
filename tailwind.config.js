@@ -1,3 +1,5 @@
+const production = !process.env.ROLLUP_WATCH;
+
 const { addUtility } = require("./src/utils/style.js");
 
 const buildPalette = require("./src/utils/color.js");
@@ -34,6 +36,7 @@ const defaultColors = {
 };
 
 module.exports = ({ colors = defaultColors, darkMode = true, ...config }) =>
+  
   merge(
     {
       variants: darkMode
